@@ -32,7 +32,6 @@ class CardInfoModal extends Component {
       languages,
       defaultBranchRef: { target: { history } }
     } = data;
-    console.log('data', data);
     return (
       <Modal
         title={name}

@@ -27,12 +27,10 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <Layout>
-          <Layout>
-            <Content>
-              <Header />
-              <Github />
-            </Content>
-          </Layout>
+          <Header />
+          <Content>
+            <Github />
+          </Content>
           <Footer style={{ textAlign: 'center' }}>
             2018 Created by Drew Peterson
           </Footer>

@@ -44,13 +44,14 @@ const ContactItem = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  border: 1px solid;
 
   h3 {
     font-size: 15px;
+    color: white;
   }
 
   a {
+    color: white;
     font-size: 12px;
     margin-top: 3px;
   }

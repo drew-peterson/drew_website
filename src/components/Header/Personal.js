@@ -18,7 +18,6 @@ class Personal extends Component {
 const Image = styled.img`
   height: 120px;
   width: 120px;
-  background-color: blue;
   border-radius: 50%;
 `;
 const PersonalWrap = styled.div`
@@ -32,10 +31,12 @@ const NameWrap = styled.div`
 
   h2 {
     font-size: 36px;
+    color: white;
   }
 
   h3 {
     margin-top: 5px;
+    color: white;
   }
 `;
 

@@ -28,7 +28,7 @@ const Hero = styled.div`
   background-size: cover;
   position: relative;
   z-index: 1;
-  height: 45vh;
+  height: 50vh;
   background: ${({ imgSm }) => `url(${imgSm}) no-repeat center`};
   @media ${device.laptop} {
     background: ${({ imgLg }) => `url(${imgLg}) no-repeat 0% 60%`};
@@ -48,14 +48,20 @@ const Hero = styled.div`
 
 const HeaderWrap = styled.div`
   margin-top: auto;
-  padding: 20px 40px;
+  padding: 15px;
+  @media ${device.laptop} {
+    padding: 20px 40px;
+  }
 `;
 
 const Border = styled.div`
   background-color: white;
   height: 1px;
   width: 100%;
-  margin: 20px 0;
+  margin: 15px 0;
+  @media ${device.laptop} {
+    margin: 20px 0;
+  }
 `;
 
 export default Header;

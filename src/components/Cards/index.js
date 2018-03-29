@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
+import { device } from '../common';
 import Card from './Card';
 import CardInfoModal from './CardInfoModal';
 import { Row, Col } from 'antd';
@@ -46,11 +47,17 @@ class _Cards extends Component {
 }
 
 const Cards = styled.div`
-  padding: 40px;
+  padding: 20px;
+  @media ${device.tablet} {
+    padding: 40px;
+  }
 `;
 
 const Title = styled.h2`
-  margin-bottom: 14px;
-  font-size: 28px;
+  margin-bottom: 4px;
+  @media ${device.laptop} {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
 `;
 export default _Cards;

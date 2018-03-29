@@ -18,8 +18,8 @@ class Personal extends Component {
 
 const Image = styled.img`
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 120px;
+  width: 120px;
   @media ${device.laptop} {
     height: 120px;
     width: 120px;
@@ -38,10 +38,11 @@ const NameWrap = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 10px;
+  margin: 20px 0;
   @media ${device.tablet} {
     text-align: left;
     margin-top: 0;
+    margin-bottom: 0;
     margin-left: 20px;
   }
 

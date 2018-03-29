@@ -9,12 +9,13 @@ class CardInfoModal extends Component {
     const { url, homepageUrl } = this.props.data;
     if (homepageUrl) {
       return [
-        <Button key="1" href={url} type="primary">
+        <Button key="1" href={url} type="primary" target="_blank">
           Github
         </Button>,
         <Button
           key="2"
           href={homepageUrl}
+          target="_blank"
           style={{ marginLeft: 10 }}
           type="primary"
         >
@@ -23,7 +24,7 @@ class CardInfoModal extends Component {
       ];
     }
     return (
-      <Button href={url} type="primary">
+      <Button href={url} type="primary" target="_blank">
         Github
       </Button>
     );

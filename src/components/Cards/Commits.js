@@ -4,7 +4,6 @@ import { List, Avatar } from 'antd';
 import moment from 'moment';
 
 const Commits = ({ history }) => {
-  console.log('history', history);
   return (
     <List
       header="Latest Commits:"

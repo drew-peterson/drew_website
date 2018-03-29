@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-console.log(process.env);
 const TOKEN = process.env.REACT_APP_GITHUB;
 console.log('token', TOKEN);
 const client = new ApolloClient({

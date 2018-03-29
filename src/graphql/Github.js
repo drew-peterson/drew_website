@@ -16,6 +16,16 @@ export default gql`
               name
               description
               updatedAt
+              repositoryTopics(first: 10) {
+                edges {
+                  node {
+                    topic {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
               languages(first: 10) {
                 edges {
                   node {

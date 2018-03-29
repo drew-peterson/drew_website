@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, Button } from 'antd';
 import Languages from './Languages';
+import Topics from './Topics';
 import Commits from './Commits';
 
 class CardInfoModal extends Component {
@@ -34,6 +35,7 @@ class CardInfoModal extends Component {
       description,
       name,
       languages,
+      repositoryTopics,
       defaultBranchRef: { target: { history } }
     } = data;
     return (
@@ -44,7 +46,10 @@ class CardInfoModal extends Component {
         footer={this.renderLinks()}
       >
         <p style={styles.description}>{description}</p>
-        <Languages languages={languages.edges} style={{ marginTop: '20px' }} />
+        <Topics topics={repositoryTopics.edges} style={styles.topics} />
+        {!repositoryTopics.edges.length && (
+          <Languages languages={languages.edges} style={styles.languages} />
+        )}
         <Commits history={history.edges} style={styles.commits} />
       </Modal>
     );
@@ -52,8 +57,13 @@ class CardInfoModal extends Component {
 }
 
 const styles = {
+  topics: {
+    marginTop: '10px',
+    backgroundColor: '#1890ff',
+    color: 'white'
+  },
   languages: {
-    marginTop: '25px'
+    marginTop: '20px'
   },
   commits: {
     marginTop: '25px'

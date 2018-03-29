@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Icon } from 'antd';
+import { device } from '../common';
 
 class Contact extends Component {
   renderContacts() {
@@ -51,7 +52,10 @@ const ContactItem = styled.div`
 
   .social {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    @media ${device.laptop} {
+      font-size: 30px;
+    }
     i {
       margin-right: 20px;
       transition: 0.2s color;

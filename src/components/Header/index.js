@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import Personal from './Personal';
 import Contact from './Contact';
 import { device } from '../common';
-import img from './wallpaperLg.png';
+import imgLg from './wallpaperLg.png';
+import imgSm from './wallpaperSm.jpeg';
 import styled from 'styled-components';
 
 class Header extends Component {
   render() {
     return (
-      <Hero src={img} className="hero">
+      <Hero imgLg={imgLg} imgSm={imgSm} className="hero">
         <HeaderWrap>
           <Personal />
           <Border />
@@ -24,12 +25,13 @@ const Hero = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: ${({ src }) => `url(${src}) no-repeat 0% 60%`};
   background-size: cover;
   position: relative;
   z-index: 1;
   height: 45vh;
+  background: ${({ imgSm }) => `url(${imgSm}) no-repeat center`};
   @media ${device.laptop} {
+    background: ${({ imgLg }) => `url(${imgLg}) no-repeat 0% 60%`};
     height: 50vh;
   }
   &:after {

@@ -20,7 +20,7 @@ class _Cards extends Component {
     return _.map(edges, ({ node }) => {
       // have col in card doesnt work for some reason....
       return (
-        <Col xs={{ span: 12 }} lg={{ span: 8 }} key={node.id}>
+        <Col xs={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }} key={node.id}>
           <Card node={node} renderModal={this.renderModal.bind(this)} />
         </Col>
       );

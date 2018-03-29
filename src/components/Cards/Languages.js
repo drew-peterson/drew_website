@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 
 const Languages = ({ languages, style }) => {
   return (
-    <div style={style}>
+    <div>
       {_.map(languages, ({ node: { name, color } }) => {
         return (
-          <Tag key={name} color={color}>
+          <Tag key={name} color={color} style={style}>
             {name}
           </Tag>
         );

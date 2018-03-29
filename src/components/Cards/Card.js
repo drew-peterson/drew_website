@@ -12,7 +12,7 @@ class _Card extends Component {
     return (
       <Card
         hoverable
-        style={{ marginTop: 16, height: 170 }}
+        style={{ marginTop: 16, height: 200 }}
         onClick={() => renderModal(this.props.node)}
         bodyStyle={styles.cardBody}
       >

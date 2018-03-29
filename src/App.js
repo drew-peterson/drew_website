@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-const TOKEN = '4e90aeb509ce87e12cc81dec7d1b49f4092708ae';
+const TOKEN = process.env.REACT_APP_GITHUB;
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   fetchOptions: {

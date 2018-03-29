@@ -21,7 +21,11 @@ class CardInfoModal extends Component {
         </Button>
       ];
     }
-    return <Button href={url}>Github</Button>;
+    return (
+      <Button href={url} type="primary">
+        Github
+      </Button>
+    );
   }
 
   render() {

@@ -12,8 +12,9 @@ class _Card extends Component {
     return (
       <Card
         hoverable
-        style={{ marginTop: 16 }}
+        style={{ marginTop: 16, height: 170 }}
         onClick={() => renderModal(this.props.node)}
+        bodyStyle={styles.cardBody}
       >
         <Meta title={name} description={description} />
         <Meta
@@ -31,8 +32,13 @@ const styles = {
     marginTop: '10px'
   },
   description: {
-    marginTop: '15px',
+    marginTop: 'auto',
     fontSize: '10px'
+  },
+  cardBody: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
   }
 };
 

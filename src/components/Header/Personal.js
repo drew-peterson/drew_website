@@ -8,7 +8,7 @@ class Personal extends Component {
         <Image src="https://avatars3.githubusercontent.com/u/10780437?v=4" />
         <NameWrap>
           <h2>Drew Peterson</h2>
-          <h3>FullStack Javascript Developer</h3>
+          <h3>Full-Stack Javascript Developer</h3>
         </NameWrap>
       </PersonalWrap>
     );
@@ -35,7 +35,6 @@ const NameWrap = styled.div`
   }
 
   h3 {
-    margin-top: 5px;
     color: white;
   }
 `;

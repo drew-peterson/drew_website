@@ -8,7 +8,7 @@ export default gql`
       #   url
       #   avatarUrl
       # }
-      repositories(first: 2) {
+      repositories(first: 40, orderBy: { field: CREATED_AT, direction: DESC }) {
         edges {
           node {
             ... on Repository {

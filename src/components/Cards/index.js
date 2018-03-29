@@ -20,7 +20,7 @@ class _Cards extends Component {
     return _.map(edges, ({ node }) => {
       // have col in card doesnt work for some reason....
       return (
-        <Col xs={{ span: 12 }} lg={{ span: 6 }} key={node.id}>
+        <Col xs={{ span: 12 }} lg={{ span: 8 }} key={node.id}>
           <Card node={node} renderModal={this.renderModal.bind(this)} />
         </Col>
       );
@@ -31,6 +31,7 @@ class _Cards extends Component {
     const { visible, data } = this.state;
     return (
       <Cards>
+        <Title>Github Projects</Title>
         <Row gutter={20}>{this.renderCards()}</Row>
         {visible && (
           <CardInfoModal
@@ -46,5 +47,10 @@ class _Cards extends Component {
 
 const Cards = styled.div`
   padding: 40px;
+`;
+
+const Title = styled.h2`
+  margin-bottom: 14px;
+  font-size: 28px;
 `;
 export default _Cards;

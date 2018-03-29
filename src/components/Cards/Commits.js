@@ -4,17 +4,19 @@ import { List, Avatar } from 'antd';
 import moment from 'moment';
 
 const Commits = ({ history }) => {
+  console.log('history', history);
   return (
     <List
-      header="Latest Commits"
+      header="Latest Commits:"
       dataSource={history}
+      style={{ marginTop: 20 }}
       renderItem={({ node: { message, committedDate } }) => (
         <List.Item>
           <List.Item.Meta
             avatar={
               <Avatar
                 icon="github"
-                // style={{ backgroundColor: '#87d068' }}
+                style={{ backgroundColor: '#1890ff' }}
                 size="large"
               />
             }

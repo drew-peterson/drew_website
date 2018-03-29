@@ -6,8 +6,6 @@ import { device } from '../common';
 import img from './wallpaperLg.png';
 import styled from 'styled-components';
 
-console.log(device);
-
 class Header extends Component {
   render() {
     return (

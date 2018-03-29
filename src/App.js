@@ -27,8 +27,8 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <Layout>
-          <Header />
           <Content>
+            <Header />
             <Github />
           </Content>
           <Footer style={{ textAlign: 'center' }}>
